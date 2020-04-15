@@ -1,0 +1,28 @@
+{
+  "name": "fetch",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-scripts": "1.1.5"
+  },
+  "proxy": {
+    "/Logon": {
+      "target": "http://89.206.0.43:8138/s4ode/Api/Session",
+      "changeOrigin": true
+    },
+
+    "/GetSummary": {
+      "target": "http://89.206.0.43:8138/s4ode/Api/Data/GetSummary",
+      "changeOrigin": true
+    }
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
